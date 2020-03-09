@@ -8,96 +8,142 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container register">
-                <div class="row">
-                    <div class="col-md-3 register-left">
-                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
-                        <h3>Welcome</h3>
-                        <p>Completa el formulario de tu mascota!</p>
-                    </div>
+<!------ Inicio ---------->
+<section class="inicio area">
+    <div class="container inicio">
+        <div class="row align-items-center">	
+            <div class="col-lg-6 home-about-left no-padding">
+                <img src="/img/pet.png" alt=""/>
+            </div>
+            <div class="col-lg-6 home-about-right no-padding">
+                <h1>
+                    Bienvenido al Registro de Salud
+                </h1>
+                <h5>Porfavor ingrese los datos relacionados con la salud de la mascota!</h5>
+            
+            </div>
+        </div>
+    </div>	
+</section>
+<!--End Inicio -->
 
-                        
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Password *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="maxl">
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="gender" value="male" checked>
-                                                    <span> Male </span> 
-                                                </label>
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="gender" value="female">
-                                                    <span>Female </span> 
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Your Email *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <select class="form-control">
-                                                <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
-                                                <option>What is your Birthdate?</option>
-                                                <option>What is Your old Phone Number</option>
-                                                <option>What is your Pet Name?</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
-                                        </div>
-                                        <input type="submit" class="btnRegister"  value="Register"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <h3  class="register-heading">Apply as a Hirer</h3>
-                                <div class="row register-form">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="First Name *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Last Name *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" value="" />
-                                        </div>
+<!-- Registro-->
+<div class= "container register">
 
+    <div class="row align-items-center">	
 
-                                    </div>
-                                    
-                                </div>
-                            </div>
+        <div class="col-lg-6 home-about-left no-padding">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Peso*" value="" />
+            </div>
+        
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Altura *" value="" />
+            </div>
+            
+            <div class="form-group">
+                <p>¿Su mascota tiene enfermedades?*</p>
+                <div class="maxl">
 
+                    <label class="radio inline"> 
 
+                        <input type="radio" name="opcion" value="Si" checked>
+
+                        <span> Si </span> 
+
+                    </label>
+
+                    <label class="radio inline"> 
+
+                        <input type="radio" name="opcion" value="No">
+
+                        <span>No </span> 
+
+                    </label>
+
+                </div>
 
             </div>
 
+            <div class="form-group">
+                <p>Si las hay ¿Cúales?</p>
+                <input type="text" class="form-control" placeholder="" value="" />
+            </div>
+            
+       </div>
 
-<!--BOTON REGRESAR-->>
-<div class="container">
-    <div class="row">
-        <div class="col text-center"><a href="/pet" class="btn btn-outline-success" role="button" aria-pressed="true">Regresar</a></div>
+        <div class="col-lg-6 home-about-right no-padding">
+            <p>Seleccione las vacunas perteneciente a su mascota*</p>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Parvovirus
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Rabia
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Moquillo Canino
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Hepatitis Infecciosa
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Leptospirosis
+                </label>
+            </div>
+            
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Pentavalente
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Hexavalente
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                  Vacuna Octovalente
+                </label>
+            </div>
+            
+           
     </div>
+
+    </div>
+             
+ <div class="containerboton">
+        <div class="row justify-content-center align-items-center ">
+        <input type="submit" class="btnGuardar"  value="Guardar"/>
+    </div>
+  </div>
+</div>
+<!--BOTON REGRESAR-->
+
+<div class="container">
+    
+        <div class="col text-left"><a href="/pet" class="btn btn-outline-success" role="button" aria-pressed="true">Regresar</a></div>
+    </div>
+</div>
 </div>
 
 </html>
