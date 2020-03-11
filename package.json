@@ -1,5 +1,5 @@
 {
-  "name": "node-firstwebsite",
+  "name": "firstwebsite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,5 +17,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angiecarojas/Pagina-Web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angiecarojas/Pagina-Web/issues"
+  },
+  "homepage": "https://github.com/angiecarojas/Pagina-Web#readme"
 }
