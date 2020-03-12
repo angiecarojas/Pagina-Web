@@ -34,108 +34,163 @@
 
     <div class="row align-items-center">	
 
+ 
+<!-- lado izquierdo del registro-->       
         <div class="col-lg-6 home-about-left no-padding">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Peso*" value="" />
+                <input id="peso" type="text" class="form-control" placeholder="Peso*" value="" />
             </div>
-        
+         <hr style="color: #0056b2;" />
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Altura *" value="" />
+                <input id="altura" type="text" class="form-control" placeholder="Altura *" value="" />
             </div>
-            
+         <hr style="color: #0056b2;" />
+  
             <div class="form-group">
-                <p>¿Su mascota tiene enfermedades?*</p>
-                <div class="maxl">
-
-                    <label class="radio inline"> 
-
-                        <input type="radio" name="opcion" value="Si" checked>
-
-                        <span> Si </span> 
-
-                    </label>
-
-                    <label class="radio inline"> 
-
-                        <input type="radio" name="opcion" value="No">
-
-                        <span>No </span> 
-
-                    </label>
-
+                
+                <div class="enfermedades">
+                    <fieldset>
+                        <p>¿Su mascota tiene enfermedades?*</p>
+                        <label>
+                            <input id="OE_si" type="radio" name="opcion_en" value="Si_en"> Si
+                        </label>
+                        <label>
+                            <input id="OE_no" type="radio" name="opcion_en" value="No_en"> No
+                        </label>               
+                    </fieldset>              
                 </div>
-
             </div>
+                
+            <div class="form-group">
+                <p>Si las hay, ¿Cúal?</p>
+                <form >
+                    <label for="enfermedad">Elija la enfermedad:</label>
+                    <select id="enfermedad" name="enfermedad">
+                      <option value="Moquillo">Moquillo</option>
+                      <option value="Sarna">Sarna</option>
+                      <option value="Otitis">Otitis</option>
+                      <option value="Parasitos">Parasitos</option>
+                      <option value="Artrosis">Artrosis</option>
+                      <option value="Parvovirus">Parvovirus</option>
+                      <option value="Cancer">Cancer</option>
+                    </select>     
+                  </form>
+            </div>
+          
+            <hr style="color: #0056b2;" />
 
             <div class="form-group">
-                <p>Si las hay ¿Cúales?</p>
-                <input type="text" class="form-control" placeholder="" value="" />
+                
+                <div class="Esterilizacion">
+        
+                    <fieldset>
+                        <p>¿Su mascota está desparacitada?*</p>
+                        <label>
+                            <input id="OD_si" type="radio" name="opcion_des" value="Si_des"> Si
+                        </label>
+                        <label>
+                            <input id="OD_no" type="radio" name="opcion_des" value="No_des"> No
+                        </label>               
+                    </fieldset>
+        
+                    </label>
+        
+                </div>
+        
             </div>
             
        </div>
 
+
+
+<!-- lado derecho del registro--> 
         <div class="col-lg-6 home-about-right no-padding">
-            <p>Seleccione las vacunas perteneciente a su mascota*</p>
+            <p>Seleccione las vacunas pertenecientes a su mascota*</p>
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_parvovirus" type="checkbox" value="">
                   Vacuna Parvovirus
                 </label>
             </div>
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_rabia" type="checkbox" value="">
                   Vacuna Rabia
                 </label>
             </div>
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_moquillo" type="checkbox" value="">
                   Vacuna Moquillo Canino
                 </label>
             </div>
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_hepatitis" type="checkbox" value="">
                   Vacuna Hepatitis Infecciosa
                 </label>
             </div>
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_leptospirosis" type="checkbox" value="">
                   Vacuna Leptospirosis
                 </label>
             </div>
             
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_pentavalente" type="checkbox" value="">
                   Vacuna Pentavalente
                 </label>
             </div>
 
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_hexavalente" type="checkbox" value="">
                   Vacuna Hexavalente
                 </label>
             </div>
 
             <div class="checkbox">
                 <label>
-                  <input type="checkbox" value="">
+                  <input id="V_octavalente" type="checkbox" value="">
                   Vacuna Octovalente
                 </label>
             </div>
             
+
+
+            <hr style="color: #0056b2;" />
+
+            <div class="form-group">
+                
+                <div class="Esterilizacion">
+        
+                    <fieldset>
+                        <p>¿Su mascota está esterilizada?*</p>
+                        <label>
+                            <input id="OEs_si" type="radio" name="opcion_es" value="Si_es"> Si
+                        </label>
+                        <label>
+                            <input id="OEs_no" type="radio" name="opcion_es" value="No_es"> No
+                        </label>               
+                    </fieldset>
+        
+                    </label>
+        
+                </div>
+        
+            </div>
            
     </div>
+   
+
 
     </div>
              
  <div class="containerboton">
         <div class="row justify-content-center align-items-center ">
-        <input type="submit" class="btnGuardar"  value="Guardar"/>
+        <input id="btnguardar" type="submit" class="btnGuardar"  value="Guardar"/>
     </div>
   </div>
 </div>
@@ -147,9 +202,5 @@
     </div>
 </div>
 </div>
-
-
-
-
 
 </html>
